@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" manifest="cmf.manifest">
+<head>
+    <meta charset="utf-8" />
+    <title>Offline Web Application</title>
+    <script>
+        function changeImage() {
+            document.images["jsbutton"].src = "giphy.gif";
+            return true;
+        }
+        function changeImageMore() {
+            document.images["jsbutton"].src = "spongebob.gif";
+            return true;
+        }
+        function changeImageEvenMore() {
+            document.images["jsbutton"].src = "goodbye.gif";
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <img name="jsbutton" src="Animated.gif" width="25%" height="25%" border="0" />
+    <br /><input type="button" onclick="changeImage()" value="Hello!" />
+    &nbsp;&nbsp;<input type="button" onclick="changeImageMore()" value="Rainbow!" />
+    &nbsp;&nbsp;<input type="button" onclick="changeImageEvenMore()" value="Goodbye!" />
+</body>
+</html>
